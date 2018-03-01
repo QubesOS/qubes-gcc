@@ -12,7 +12,7 @@ FETCH_CMD := wget --no-use-server-timestamps -q -O
 # Fedora distributes the gcc snapshot only inside the .src.rpm. So always
 # download it from ftp.qubes-os.org.
 URLS := \
-    https://ftp.qubes-os.org/distfiles/gcc-6.4.1-20170727.tar.bz2
+    https://ftp.qubes-os.org/distfiles/gcc-5.3.1-20160406.tar.bz2
 
 ALL_URLS := $(URLS)
 ALL_FILES := $(notdir $(ALL_URLS))

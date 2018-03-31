@@ -18,7 +18,7 @@ ALL_URLS := $(URLS)
 ALL_FILES := $(notdir $(ALL_URLS))
 
 ifneq ($(DISTFILES_MIRROR),)
-ALL_URLS := $(addprefix $(DISTFILES_MIRROR),$(ALL_FILES_TMP))
+ALL_URLS := $(addprefix $(DISTFILES_MIRROR),$(ALL_FILES))
 endif
 
 $(ALL_FILES): %: %.sha512
